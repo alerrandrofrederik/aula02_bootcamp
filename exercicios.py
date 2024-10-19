@@ -10,13 +10,20 @@
 
 # 2. Crie um programa que receba um número do usuário e calcule o resto da divisão desse número por 5.
 
-numero = int(input("Digite um número inteiro: "))
-divisor = 5
+# numero = int(input("Digite um número inteiro: "))
+# divisor = 5
 
-resto = numero % divisor
-print(f"O resto de {numero} por {divisor} é {resto}.")
+# resto = numero % divisor
+# print(f"O resto de {numero} por {divisor} é {resto}.")
 
 # 3. Desenvolva um programa que multiplique dois números fornecidos pelo usuário e mostre o resultado.
+
+numero1 = int(input("Digite um número inteiro: "))
+numero2 = int(input("Digite outro número inteiro: "))
+
+multiplicacao = numero1 * numero2
+print(f"A multiplicação de {numero1} e {numero2} é {multiplicacao}.")
+
 # 4. Faça um programa que peça dois números inteiros e imprima a divisão inteira do primeiro pelo segundo.
 # 5. Escreva um programa que calcule o quadrado de um número fornecido pelo usuário.
 
