@@ -39,13 +39,13 @@
 # 6. Escreva um programa que receba dois números flutuantes e realize sua adição.
 # 7. Crie um programa que calcule a média de dois números flutuantes fornecidos pelo usuário.
 
-try:
-    numero1 = float(input("Digite um número flutuante: "))
-    numero2 = float(input("Digite outro número flutuante: "))
-    media = (numero1 + numero2) / 2
-    print(f"A média de {numero1} e {numero2} é {media}.")
-except ValueError:
-    print("Digite apenas números validos.")
+# try:
+#     numero1 = float(input("Digite um número flutuante: "))
+#     numero2 = float(input("Digite outro número flutuante: "))
+#     media = (numero1 + numero2) / 2
+#     print(f"A média de {numero1} e {numero2} é {media}.")
+# except ValueError:
+#     print("Digite apenas números validos.")
 
 # 8. Desenvolva um programa que calcule a potência de um número (base e expoente fornecidos pelo usuário).
 # 9. Faça um programa que converta a temperatura de Celsius para Fahrenheit.
@@ -54,6 +54,19 @@ except ValueError:
 # #### Strings (`str`)
 
 # 11. Escreva um programa que receba uma string do usuário e a converta para maiúsculas.
+
+# código fraco
+# palavra = input("Digite uma palavra: ")
+# print(palavra.upper())
+
+# codigo melhor
+palavra = input("Digite uma palavra: ")
+if isinstance(palavra, str):
+     print(palavra.upper())
+else:
+    print ("Erro: O input deve ser uma string.")
+        
+
 # 12. Crie um programa que receba o nome completo do usuário e imprima o nome com todas as letras minúsculas.
 # 13. Desenvolva um programa que peça ao usuário para inserir uma frase e, em seguida, imprima esta frase sem espaços em branco no início e no final.
 # 14. Faça um programa que peça ao usuário para digitar uma data no formato "dd/mm/aaaa" e, em seguida, imprima o dia, o mês e o ano separadamente.
