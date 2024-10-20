@@ -26,11 +26,11 @@
 
 # 4. Faça um programa que peça dois números inteiros e imprima a divisão inteira do primeiro pelo segundo.
 
-numero1 = int(input("Digite um número inteiro: "))
-numero2 = int(input("Digite outro número inteiro: "))
+# numero1 = int(input("Digite um número inteiro: "))
+# numero2 = int(input("Digite outro número inteiro: "))
 
-divisao = numero1 // numero2
-print(f"A divisão inteira de {numero1} e {numero2} é {divisao}.")
+# divisao = numero1 // numero2
+# print(f"A divisão inteira de {numero1} e {numero2} é {divisao}.")
 
 # 5. Escreva um programa que calcule o quadrado de um número fornecido pelo usuário.
 
@@ -38,6 +38,15 @@ print(f"A divisão inteira de {numero1} e {numero2} é {divisao}.")
 
 # 6. Escreva um programa que receba dois números flutuantes e realize sua adição.
 # 7. Crie um programa que calcule a média de dois números flutuantes fornecidos pelo usuário.
+
+try:
+    numero1 = float(input("Digite um número flutuante: "))
+    numero2 = float(input("Digite outro número flutuante: "))
+    media = (numero1 + numero2) / 2
+    print(f"A média de {numero1} e {numero2} é {media}.")
+except ValueError:
+    print("Digite apenas números validos.")
+
 # 8. Desenvolva um programa que calcule a potência de um número (base e expoente fornecidos pelo usuário).
 # 9. Faça um programa que converta a temperatura de Celsius para Fahrenheit.
 # 10. Escreva um programa que calcule a área de um círculo, recebendo o raio como entrada.
