@@ -103,12 +103,25 @@
 # 17. Crie um programa que receba dois valores booleanos do usuário e retorne o resultado da operação OR.
 
 # Exemplo de entrada
-valor1 = True
-valor2 = False
-resultado_and = valor1 or valor2
-print("Resultado do OR lógico:", resultado_and)
+# valor1 = True
+# valor2 = False
+# resultado_and = valor1 or valor2
+# print("Resultado do OR lógico:", resultado_and)
 
 # 18. Desenvolva um programa que peça ao usuário para inserir um valor booleano e, em seguida, inverta esse valor.
+
+# Pergunta se está chovendo
+esta_chovendo = input("Está chovendo? (sim/não): ")
+
+# Converte a resposta para minúsculas e remove espaços extras
+esta_chovendo = esta_chovendo.strip().lower()
+
+# Se a resposta for "não", significa que não está chovendo
+if not esta_chovendo == "sim":
+    print("Você pode sair sem guarda-chuva.")
+else:
+    print("Melhor levar um guarda-chuva.")
+
 # 19. Faça um programa que compare se dois números fornecidos pelo usuário são iguais.
 # 20. Escreva um programa que verifique se dois números fornecidos pelo usuário são diferentes.
 
